@@ -1,6 +1,7 @@
-#Install & Configure RabbitMQ in Centos 7 offline mode
 
-## Steps once you copied all required binaries
+##Install & Configure RabbitMQ in Centos 7 offline mode
+
+### Steps once you copied all required binaries
 
 1- Install rabbitmq-release-signing-key
 ```shell
