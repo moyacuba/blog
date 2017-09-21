@@ -3,29 +3,29 @@
 ## Steps once you copied all required binaries
 
 1- Install rabbitmq-release-signing-key
-´´´shell
+```shell
 rpm --import rabbitmq-release-signing-key.asc.txt
-´´´
+```
 
 2- Install ErLang
-´´´shell
+```shell
 yum install erlang-20.0.5-1.el7.centos.x86_64.rpm
-´´´
+```
 
 3- Install SOCAT RabbitMQ's dependency
-´´´shell
+```shell
 yum install socat-1.7.3.2-2.el7.x86_64.rpm
-´´´
+```
 
 4- Install RabbitMQ RPM
-´´´shell
+```shell
 yum install rabbitmq-server-3.6.12-1.el7.noarch.rpm
-´´´
+```
 
 5- Fix SELinux and the firewall
 
 Read this [article RabbtiMQ Port Access](http://www.rabbitmq.com/networking.html#selinux-ports) documentation for details.
-´´´shell
+```shell
 firewall-cmd --permanent --add-port=4369/tcp
 firewall-cmd --permanent --add-port=5672/tcp
 firewall-cmd --permanent --add-port=5671/tcp
@@ -39,4 +39,4 @@ firewall-cmd --permanent --add-port=15674/tcp
 firewall-cmd --permanent --add-port=15675/tcp
 firewall-cmd --reload
 setsebool -P nis_enabled 1
-´´´
+```
