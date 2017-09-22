@@ -3,9 +3,9 @@
 
 ## Steps once you copied all required binaries
 
-1- Install rabbitmq-release-signing-key
+1- Install the ASCII file downloaded from (https://www.rabbitmq.com/rabbitmq-release-signing-key.asc)[https://www.rabbitmq.com/rabbitmq-release-signing-key.asc]
 ```shell
-rpm --import rabbitmq-release-signing-key.asc.txt
+rpm --import rabbitmq-release-signing-key.asc
 ```
 
 2- Install ErLang
@@ -43,7 +43,9 @@ setsebool -P nis_enabled 1
 ```
 
 6- Setup enviroment & configuration files:
+
 6.1 You can change some parameters using enviroment variables, check documentation for details at (http://www.rabbitmq.com/configure.html#define-environment-variables)[http://www.rabbitmq.com/configure.html#define-environment-variables]
+
 6.2 Or you can use the file ```rabbitmq-env.conf```, by default in Centos rabbitmqserver read it from folder ```/etc/rabbitmq/``` unless you use enviroment variable to change its path; the RabbitMQ Server will append ```.conf``` extension .
 An example for ```rabbitmq-env.conf```:
 ```txt
