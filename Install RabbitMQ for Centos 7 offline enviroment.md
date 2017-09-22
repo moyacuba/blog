@@ -3,7 +3,7 @@
 
 ## Steps once you copied all required binaries
 
-1- Install the ASCII file downloaded from (https://www.rabbitmq.com/rabbitmq-release-signing-key.asc)[https://www.rabbitmq.com/rabbitmq-release-signing-key.asc]
+1- Install the ASCII file downloaded from (https://www.rabbitmq.com/rabbitmq-release-signing-key.asc)
 ```shell
 rpm --import rabbitmq-release-signing-key.asc
 ```
